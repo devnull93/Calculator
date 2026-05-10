@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
               const piOver2 = PI / 2;
               const tolerance = 1e-6;
 
-              if (Math.abs(angleRad - piOver2 * Math.round(angleRad / piOver2)) < tolerance) {
+              if (Trig.abs(angleRad - piOver2 * Math.round(angleRad / piOver2)) < tolerance) {
                   result = ERROR_DIV_BY_ZERO;
                   historyString = `tan(${currentValue}) = ${result}`;
               } else {
