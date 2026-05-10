@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Scientific Calculator</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap">
+</head>
+<body>
+   <div class="calculator-container">
+      <div class="calculator-body">
+         <div class="display-area">
+            <div id="history" class="history-text"></div>
+            <input type="text" id="display" class="display-text" value="0" readonly>
+         </div>
+         <div class="controls-area">
+            <div class="theme-switcher">
+               <label for="themeSelect">Theme:</label>
+               <select id="themeSelect">
+                  <option value="dark">Dark</option>
+                  <option value="light">Light</option>
+                  <option value="pink">Pink</option>
+                  <option value="lime">Lime</option>
+                  <option value="dark-green">Dark Green</option>
+               </select>
+            </div>
+            <div class="buttons-grid">
+               <button class="btn op-btn func-btn" data-value="sqrt">√</button>
+               <button class="btn op-btn func-btn" data-value="pi">π</button>
+               <button class="btn op-btn func-btn" data-value="cos">cos</button>
+               <button class="btn op-btn func-btn" data-value="sin">sin</button>
+               <button class="btn op-btn func-btn" data-value="tan">tan</button>
+
+               <button class="btn op-btn clear-btn" data-value="CE">CE</button>
+               <button class="btn op-btn clear-btn" data-value="C">C</button>
+
+               <button class="btn op-btn" data-value="/">÷</button>
+               <button class="btn op-btn" data-value="*">×</button>
+               <button class="btn op-btn" data-value="-">-</button>
+               <button class="btn op-btn" data-value="+">+</button>
+
+               <button class="btn num-btn" data-value="7">7</button>
+               <button class="btn num-btn" data-value="8">8</button>
+               <button class="btn num-btn" data-value="9">9</button>
+               <button class="btn num-btn" data-value="4">4</button>
+               <button class="btn num-btn" data-value="5">5</button>
+               <button class="btn num-btn" data-value="6">6</button>
+               <button class="btn num-btn" data-value="1">1</button>
+               <button class="btn num-btn" data-value="2">2</button>
+               <button class="btn num-btn" data-value="3">3</button>
+               <button class="btn num-btn zero-btn" data-value="0">0</button>
+               <button class="btn num-btn" data-value=".">.</button>
+               <button class="btn op-btn equals-btn" data-value="=">=</button>
+           </div>
+        </div>
+      </div>
+   </div>
+
+   <script src="TrigJS.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
